@@ -1,55 +1,54 @@
-*{
+* {
     padding: 0px;
     margin: 0px;
 }
 
 @font-face {
-    font-family:'gandom';
-    src: url('../fonts/Gandom.ttf') format('truetype')
-    , url('../fonts/Gandom.woff') format("woff");
+    font-family: 'gandom';
+    src: url('../fonts/Gandom.ttf') format('truetype'), url('../fonts/Gandom.woff') format("woff");
 }
 
 @keyframes down {
-    0%{
+    0% {
         opacity: 0.9;
         margin-top: 5px;
     }
 
-    100%{
+    100% {
         opacity: 0.1;
         margin-top: 130px;
     }
 }
 
-body{
+body {
     font-family: gandom;
 }
 
-header{
+header {
     width: 100%;
     height: 1211px;
-    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)) ,url('../img/pexels-photo-441963.jpeg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../img/pexels-photo-441963.jpeg');
     background-size: cover;
 }
 
-.logo{
+.logo {
     background-image: url('../img/logo-flat.png');
     width: 100px;
     height: 100px;
     background-size: cover;
 }
 
-.nav_menu{
+.nav_menu {
     list-style-type: none;
 }
 
-a{
+a {
     text-decoration: none;
     color: white;
     font-size: 28px;
 }
 
-.container{
+.container {
     margin: 0px auto;
     max-width: 1200px;
     display: flex;
@@ -57,23 +56,24 @@ a{
     justify-content: space-between;
     padding-top: 30px;
 }
-.nav_menu li{
+
+.nav_menu li {
     display: inline-block;
     margin-left: 60px;
 }
 
-.nav_menu li:hover{
+.nav_menu li:hover {
     border-bottom: 4px solid #fff;
     transition: all 0.2s linear;
 }
 
-.site_tittle{
+.site_tittle {
     text-align: center;
     font-size: 30px;
     margin-top: 50px;
 }
 
-.site_tittle a{
+.site_tittle a {
     background-color: rgb(75, 123, 212);
     display: inline-block;
     width: 600px;
@@ -81,7 +81,7 @@ a{
     margin-top: 20px;
 }
 
-.down{
+.down {
     width: 200px;
     height: 250px;
     margin: 0px auto;
@@ -92,15 +92,15 @@ a{
     right: 0px;
 }
 
-.fa-angle-down{
+.fa-angle-down {
     font-size: 120px;
     color: #ffffff;
     animation: down 1s infinite alternate linear;
 }
 
-.category{
+.category {
     display: grid;
-    grid-template-columns: repeat(6 , 1fr);
+    grid-template-columns: repeat(6, 1fr);
     grid-template-rows: 200px;
     gap: 0px 5px;
     text-align: center;
@@ -108,30 +108,35 @@ a{
     margin-top: 5px;
 }
 
-.category div:nth-child(1){
+.category div:nth-child(1) {
     background-color: rgb(224, 64, 64);
 }
-.category div:nth-child(2){
+
+.category div:nth-child(2) {
     background-color: rgb(70, 70, 218);
 }
-.category div:nth-child(3){
+
+.category div:nth-child(3) {
     background-color: rgb(59, 211, 173);
 }
-.category div:nth-child(4){
-    background-color:rgb(224, 170, 68) ;
-}
-.category div:nth-child(5){
-    background-color: yellowgreen;
-}
-.category div:nth-child(6){
-    background-color:rgb(179, 47, 179);
+
+.category div:nth-child(4) {
+    background-color: rgb(224, 170, 68);
 }
 
-main{
+.category div:nth-child(5) {
+    background-color: yellowgreen;
+}
+
+.category div:nth-child(6) {
+    background-color: rgb(179, 47, 179);
+}
+
+main {
     margin: 0px 100px;
 }
 
-.main-title{
+.main-title {
     text-align: center;
     background-color: lightgrey;
     max-width: 1000px;
@@ -139,48 +144,56 @@ main{
     border-radius: 5px;
 }
 
-.main-title h1{
+.main-title h1 {
     font-size: 60px;
 }
-.contents{
+
+.contents {
     display: grid;
-    grid-template-columns: repeat(4 , 1fr);
-    grid-template-rows: repeat(2,400px);
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 400px);
     gap: 35px 15px;
 }
 
-.main-content{
+.main-content {
     position: relative;
     background-size: cover;
     cursor: pointer;
 }
 
-.contents .main-content:nth-child(1){
+.contents .main-content:nth-child(1) {
     background-image: url('../img/bootstrap.jpg');
 }
-.contents .main-content:nth-child(2){
+
+.contents .main-content:nth-child(2) {
     background-image: url('../img/css.jpg');
 }
-.contents .main-content:nth-child(3){
+
+.contents .main-content:nth-child(3) {
     background-image: url('../img/html.jpg');
 }
-.contents .main-content:nth-child(4){
+
+.contents .main-content:nth-child(4) {
     background-image: url('../img/java.jpg');
 }
-.contents .main-content:nth-child(5){
+
+.contents .main-content:nth-child(5) {
     background-image: url('../img/jquery.jpg');
 }
-.contents .main-content:nth-child(6){
+
+.contents .main-content:nth-child(6) {
     background-image: url('../img/php.jpg');
 }
-.contents .main-content:nth-child(7){
+
+.contents .main-content:nth-child(7) {
     background-image: url('../img/web.jpg');
 }
-.contents .main-content:nth-child(8){
+
+.contents .main-content:nth-child(8) {
     background-image: url('../img/store.jpg');
 }
 
-.main-content a{
+.main-content a {
     color: white;
     position: absolute;
     bottom: 0px;
@@ -189,33 +202,69 @@ main{
     background-color: rgba(210, 105, 30, 0.63);
     display: none;
 }
-.main-content:hover a{
+
+.main-content:hover a {
     display: inline-block;
 }
 
-.search-box{
+.search-box {
     margin-top: 10px;
     width: 100%;
     height: 320px;
     padding: 150px 0px;
-    background-image:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)) ,url('../img/slider_new_03.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../img/slider_new_03.jpg');
     background-size: cover;
     background-attachment: fixed;
     text-align: center;
 }
 
-.search-box p{
+.search-box p {
     font-size: 60px;
     color: #e68e1c;
     text-shadow: 0px 0px 4px rgb(0, 0, 0);
     margin-bottom: 40px;
 }
 
-.search form input{
+.search form input {
     width: 40%;
     padding: 10px;
     font-size: 40px;
     opacity: 0.7;
     border-radius: 5px;
     text-align: center;
+}
+
+.information {
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    font-size: 25px;
+    margin: 30px 0px;
+}
+
+.info img {
+    width: 300px;
+}
+
+.contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(60, 74, 139);
+    height: 150px;
+}
+
+.contact span a i {
+    margin-left: 8px;
+}
+
+.contact span:nth-child(1) {
+    margin-right: 50px;
+    color: #fff;
+    font-size: 20px;
+}
+
+.contact span:nth-child(2) {
+    margin-left: 50px;
+    color: #fff;
 }
